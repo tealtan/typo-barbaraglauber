@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: 5px solid #edd169;
+}
+
+figure {
+  margin: 0;
+}
+
+.intro {
+  font-style: italic;
+}
+
+.container {
+  margin: 30px 0 150px;
+  padding: 0 30px;
+}
+
+h1 {
+  font-family: "Blesk Inline";
+  font-size: 72px;
+  line-height: 72px;
+  /*font-family: "Turnip Regular";*/
+  /*font-weight: bold;*/
+  /*font-style: italic;*/
+  /*font-size: 64px;*/
+  /*line-height: 64px;*/
+  color: #5eb0c2;
+  color: #85c8ad;
+}
+
+h3, p {
+  color: #333;
+  font-family: "Freight Text", Georgia, serif;
+  font-size: 20px;
+  line-height: 28px;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto 30px auto;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.byline {
+  float: left;
+}
+
+.byline span,
+span.caption {
+  display: block;
+  margin-top: 9px;
+  font-family: "Griffith Gothic", Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 12px;
+  color: #85c8ad;
+}
+
+.byline span {
+  text-transform: uppercase;
+}
+
+span.caption {
+  margin: 30px 0;
+}
+
+/* Figures */
+
+figure.lead {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+figure.lead img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+figure.sidebar {
+  float: left;
+  margin-right: 30px;
+}
+
+figure.sidebar img {
+  max-width: 400px;
+  max-height: 600px;
+  /*width: 100%;*/
+}
+
+figure.span {
+  margin: 50px auto;
+  width: 600px;
+  max-width: 100%;
+}
+
+figure.span img {
+  width: 100%;
+  height: auto;
+}
+
+figure.span.large {
+  width: 720px;
+}
+
+figure.shadow {
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+figure.dalaprisma .caption {
+  margin-top: 0;
+}
+
+section.hello-recording-club {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: flex-start;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+section.hello-recording-club figure {
+  padding: 0 30px;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+section.close figure + figure {
+  border-left: 1px solid #eee;
+}
+
+section figure img {
+  width: 100%;
+  height: auto;
+}
