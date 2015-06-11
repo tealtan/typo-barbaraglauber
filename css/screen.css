@@ -39,7 +39,7 @@ h1 span {
 h1 span:after {
   display: block;
   max-width: 100%;
-  content: "An Interview with Barbara Glauber";
+  content: "Barbara Glauber’s Love for Weird Types";
   position: absolute;
   left: 0px;
   top: 0px;
