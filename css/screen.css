@@ -223,6 +223,9 @@ section figure img {
     font-size: 26px;
     line-height: 38px;
   }
+  section.hello-recording-club {
+    display: none;
+  }
 }
 
 /* Cycling */
