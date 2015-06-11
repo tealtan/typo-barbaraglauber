@@ -15,21 +15,41 @@ figure {
 }
 
 .container {
-  margin: 30px 0 150px;
+  margin: 30px 0;
   padding: 0 30px;
 }
 
 h1 {
-  font-family: "Blesk Inline";
+  position: relative;
+  padding-bottom: 30px;
+}
+
+h1 span {
+  display: block;
+  max-width: 100%;
+  color: #fe2d1b;
+  font-family: "Blesk Left";
   font-size: 72px;
-  line-height: 72px;
-  /*font-family: "Turnip Regular";*/
-  /*font-weight: bold;*/
-  /*font-style: italic;*/
-  /*font-size: 64px;*/
-  /*line-height: 64px;*/
-  color: #5eb0c2;
-  color: #85c8ad;
+  line-height: 132px;
+  z-index: -100;
+  letter-spacing: 30px;
+  word-wrap: break-word;
+}
+
+h1 span:after {
+  display: block;
+  max-width: 100%;
+  content: "An Interview with Barbara Glauber";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #f5b043;
+  font-family: "Blesk Right";
+  font-size: 72px;
+  line-height: 132px;
+  z-index: 100;
+  letter-spacing: 30px;
+  word-wrap: break-word;
 }
 
 h3, p {
@@ -60,6 +80,10 @@ span.caption {
   color: #85c8ad;
 }
 
+span.caption a {
+  color: #85c8ad;
+}
+
 .byline span {
   text-transform: uppercase;
 }
@@ -72,8 +96,10 @@ span.caption {
 
 figure.lead {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
+  padding-bottom: 50px;
   background-color: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 figure.lead img {
@@ -82,9 +108,20 @@ figure.lead img {
   margin: 0 auto;
 }
 
-figure.sidebar {
+figure.pullquote {
   float: left;
-  margin-right: 30px;
+  max-width: 300px;
+  margin: 0 30px 30px 0;
+  font-family: "Freight Text";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 36px;
+  color: #85c8ad;
+}
+
+figure.sidebar {
+  float: right;
+  margin: 0 0 30px 30px;
 }
 
 figure.sidebar img {
@@ -122,6 +159,7 @@ section.hello-recording-club {
   justify-content: space-between;
   -webkit-justify-content: flex-start;
   border-top: 1px solid #eee;
+  margin-top: 150px;
   padding-top: 30px;
 }
 
@@ -139,3 +177,64 @@ section figure img {
   width: 100%;
   height: auto;
 }
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  figure.lead {
+    display: none;
+  }
+  .byline {
+    float: none;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+  }
+  .byline span {
+    display: inline-block;
+  }
+  .byline span + span {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 span,
+  h1 span:after {
+    font-size: 24px;
+    line-height: 44px;
+  }
+}
+
+/* Cycling */
+
+span.style-cycle-1         { text-align: left; }
+span.style-cycle-1:after  { text-align: left; }
+
+span.style-cycle-2         { text-align: justify; }
+span.style-cycle-2:after  { text-align: left; }
+
+span.style-cycle-3         { text-align: center; }
+span.style-cycle-3:after  { text-align: justify; }
+
+span.style-cycle-4         { text-align: justify; }
+span.style-cycle-4:after  { text-align: justify; }
+
+span.style-cycle-5         { text-align: center; }
+span.style-cycle-5:after  { text-align: justify; }
+
+span.style-cycle-6         { text-align: right; }
+span.style-cycle-6:after  { text-align: justify; }
+
+span.style-cycle-7         { text-align: center; }
+span.style-cycle-7:after  { text-align: center; }
+
+span.style-cycle-8         { text-align: left; }
+span.style-cycle-8:after  { text-align: justify; }
+
+span.style-cycle-9         { text-align: justify; }
+span.style-cycle-9:after  { text-align: right; }
+
+span.style-cycle-10         { text-align: justify; }
+span.style-cycle-10:after  { text-align: center; }
