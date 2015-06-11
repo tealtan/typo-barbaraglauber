@@ -128,7 +128,6 @@ figure.sidebar {
 figure.sidebar img {
   max-width: 400px;
   max-height: 600px;
-  /*width: 100%;*/
 }
 
 figure.span {
@@ -223,8 +222,19 @@ section figure img {
     font-size: 26px;
     line-height: 38px;
   }
-  section.hello-recording-club {
+  section.hello-recording-club,
+  section.hello-recording-club + .caption {
     display: none;
+  }
+  figure.sidebar {
+    float: none;
+    margin: 0 auto 30px auto;
+  }
+
+  figure.sidebar img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
   }
 }
 
