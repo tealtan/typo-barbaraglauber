@@ -28,7 +28,7 @@ h1 span {
   display: block;
   max-width: 100%;
   color: #fe2d1b;
-  font-family: "Blesk Left";
+  font-family: "Blesk Left", Georgia, serif;
   font-size: 72px;
   line-height: 132px;
   z-index: -100;
